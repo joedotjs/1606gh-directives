@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Base</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="factories/songs.js"></script>
+    <script src="directives/song/song.js"></script>
+    <script src="directives/no-loitering.js"></script>
+    <script src="directives/on-3-second-hover.js"></script>
+    <script src="directives/open-in-new-tab.js"></script>
+</head>
+
+    <body ng-app="iTunes" ng-controller="MainController">
+        <the-song jam="tune" ng-repeat="tune in songs"></the-song>
+    </body>
+
+</html>

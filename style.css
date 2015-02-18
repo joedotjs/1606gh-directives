@@ -1,0 +1,25 @@
+html,body {
+    font-family: Helvetica;
+}
+
+the-song {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+the-song img {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+}
+
+the-song h1 {
+    font-size: 18px;
+    text-align: center;
+}
+
+the-song h2 {
+    font-size: 14px;
+    text-align: center;
+}
