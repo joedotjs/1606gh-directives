@@ -1,11 +1,5 @@
-var app = angular.module('iTunes', []);
+var app = angular.module('PuppyAdopt', []);
 
-app.controller('MainController', function (Songs, $scope) {
-    $scope.songs = Songs;
-    $scope.tunes = Songs;
-
-    $scope.myScopeFn = function () {
-        console.log('Hooray, I was called!');
-    };
-
+app.controller('MainController', function (Puppies, $scope) {
+    $scope.puppies = Puppies;
 });

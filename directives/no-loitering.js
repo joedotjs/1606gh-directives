@@ -4,16 +4,17 @@ app.directive('noLoitering', function () {
         restrict: 'A',
         link: function (scope, element, attrs) {
 
-            var timeout;
+            var yellTimeout;
+            var timeout = parseInt(attrs.noLoitering, 10) * 1000;
 
             element.on('mouseenter', function () {
-                timeout = setTimeout(function () {
-                    console.log('Hey you, get out of here, darn kids.');
-                }, 3000);
+                yellTimeout = setTimeout(function () {
+                    alert('GET OFF MY LAWN');
+                }, timeout);
             });
 
             element.on('mouseleave', function () {
-                clearTimeout(timeout);
+                clearTimeout(yellTimeout);
             });
 
         }
