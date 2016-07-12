@@ -11,10 +11,9 @@
     <script src="directives/open-in-new-tab.js"></script>
 </head>
     <body ng-app="PuppyAdopt" ng-controller="MainController">
-        <h1 no-loitering="1">Hover over me!</h1>
-        <a href="http://www.google.com" open-in-new-tab>Go to Google!</a>
         <div id="storefront">
-            <puppy no-loitering="10" ng-repeat="puppy in puppies"></puppy>
+            <puppy dog="myPuppy"></puppy>
+            <puppy dog="favoriteDog"></puppy>
         </div>
     </body>
 </html>
